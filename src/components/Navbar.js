@@ -4,8 +4,12 @@ import "./Navbar.css";
 // import favicon from './public'
 
 export default function Navbar() {
+  const navBarHeight = document.getElementById("navbar");
+
+  console.log(navBarHeight);
+
   return (
-    <nav>
+    <nav id="navbar">
       <div>
         <ul className="navbar-items">
           <li>

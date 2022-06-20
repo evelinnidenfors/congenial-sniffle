@@ -15,17 +15,21 @@ export default function Carousel({ slides }) {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  console.log(current);
-
   if (!Array.isArray(slides) || slides.length <= 0) {
-    return;
+    return null;
   }
 
   return (
     <section className="slider">
       <>
-        <FaArrowAltCircleLeft className="left-arrow" conClick={prevSlide} />
-        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+        <FaArrowAltCircleLeft
+          className="arrow left-arrow"
+          onClick={prevSlide}
+        />
+        <FaArrowAltCircleRight
+          className="arrow right-arrow"
+          onClick={nextSlide}
+        />
         {CarouselData.map((slide, index) => {
           return (
             <div

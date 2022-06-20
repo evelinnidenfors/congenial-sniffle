@@ -1,29 +1,35 @@
 /** NAVBAR Styling **/
 nav {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    position: sticky;
-    top: 0;
-  }
-  
-  .navbar-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-weight: 700;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-items a:hover {
-    transition: 600ms;
-  }
-  
-  .navbar-items a:hover {
-    color: #CF9D9D;
-    cursor: pointer;
-  }
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-items a:hover {
+  transition: 600ms;
+  color: #cf9d9d;
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
